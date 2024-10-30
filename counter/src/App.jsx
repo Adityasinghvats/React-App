@@ -8,7 +8,10 @@ function App() {
 
   const addValue = () => {
     console.log("Value added", Math.random())
-    setCounter(Counter+1)
+    // setCounter(Counter+1)
+    setCounter((prevCount) => prevCount+1)
+    setCounter((prevCount) => prevCount+1)
+    setCounter((prevCount) => prevCount+1)
   }
   const decValue = () => {
     if(Counter>0){
@@ -22,14 +25,14 @@ function App() {
   const newArr = [1,2,3,5]
   return (
     <>
-      <h1 className='bg-slate-400 p-4 rounded-lg mb-4 text-black'>Chai aur react</h1>
+      {/* <h1 className='bg-slate-400 p-4 rounded-lg mb-4 text-black'>Chai aur react</h1> */}
 
-      {/* <h2 className='mb-4'>Counter value: {Counter}</h2>
+      <h2 className='mb-4'>Counter value: {Counter}</h2>
       <button className='mb-4' onClick={addValue}>Add value</button>
       <br />
-      <button onClick={decValue}>Remove value</button> */}
+      <button onClick={decValue}>Remove value</button>
 
-      <Card channel="Chai aur code" Obj={obj} arr={newArr}/>
+      {/* <Card channel="Chai aur code" Obj={obj} arr={newArr}/> */}
     </>
   )
 }

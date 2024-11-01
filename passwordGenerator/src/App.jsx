@@ -9,6 +9,7 @@ function App() {
 
   const passwordGen = useCallback(() => {
     // used memoization to cache using useCallback hook
+    // useCallback is a React Hook that lets you cache a function definition between re-renders.
     let pass = ""
     let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopwxyz"
 

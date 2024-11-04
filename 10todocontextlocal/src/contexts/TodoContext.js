@@ -8,10 +8,11 @@ export const TodoContext = createContext({
             completed: false
         }
     ],
+    // functionality will be defined in the app.jsx
     addTodo : (todo) => {},
     updateTodo : (id, todo) => {},
     deleteTod : (id) => {},
-    toggleComplete: (id) => {}
+    toggleCompleted: (id) => {}
 })
 
 export const useTodo = () => {

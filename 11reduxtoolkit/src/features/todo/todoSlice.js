@@ -20,7 +20,6 @@ export const todoSlice = createSlice({
             const todo = {
                 id: nanoid(),
                 text: action.payload,
-                inputType: "Add todo"
             }
             state.todos.push(todo) // acessing the state
         },

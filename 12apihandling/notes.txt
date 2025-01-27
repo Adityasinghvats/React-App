@@ -1,0 +1,2 @@
+Creating a custom react api call hook to understand the api calling process of react.
+Other libraris which perform similar job in production are react -query and axios.
